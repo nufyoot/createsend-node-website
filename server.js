@@ -12,8 +12,9 @@ app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.static(__dirname + '/public'));
 
-app.get('/',      home.index);
-app.get('/about', home.about);
+app.get('/',                home.index);
+app.get('/about',           home.about);
+app.get('/getting-started', home.gettingStarted)
 
 if (process.env.NODETIME_ACCOUNT_KEY) {
   require('nodetime').profile({

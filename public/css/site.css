@@ -1,0 +1,8 @@
+code {
+    white-space: pre;
+    background-color: #eee;
+    display: block;
+    padding: 10px;
+    border: 1px dashed #999;
+    color: black;
+}

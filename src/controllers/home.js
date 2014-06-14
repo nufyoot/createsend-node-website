@@ -14,6 +14,10 @@ module.exports = function (config) {
 
         about: function (req, res) {
             res.send(razor.render(path.join('home', 'about.html'), { activeTab: 'about' }));
+        },
+
+        gettingStarted: function (req, res) {
+            res.send(razor.render(path.join('home', 'getting-started.html'), { activeTab: 'getting-started' }));
         }
     };
 };

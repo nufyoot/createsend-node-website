@@ -1,0 +1,11 @@
+<h2>Authentication</h2>
+
+<p>
+    The Campaign Monitor API requires authentication using a few different methods.
+    createsend-node supports only one for now, the API key.
+</p>
+
+<code>    var createsend = require('createsend-node');
+    var auth = { apiKey: 'your api key' };
+    var api = new createsend(auth);
+</code>
