@@ -1,0 +1,20 @@
+{
+  "name": "createsend-node-website",
+  "version": "0.1.0",
+  "description": "createsend-node Website",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nufyoot/createsend-node-website.git"
+  },
+  "dependencies": {
+    "express": "3.x",
+    "kally-razor": "*",
+    "nodetime": "*"
+  },
+  "author": "Terry Tice <nufyoot@gmail.com>",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  }
+}
