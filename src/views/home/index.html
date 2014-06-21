@@ -1,3 +1,40 @@
-<h2>createsend-node</h2>
+<div class="col-lg-8 col-md-8">
+    <h2>Authentication</h2>
 
-Learn how to use the createsend-node wrapper.
+    <p>
+        The Campaign Monitor API requires authentication using a few different methods.
+        createsend-node supports only one for now, the API key.
+    </p>
+
+    <pre><code class="language-javascript">var createsend = require('createsend-node');
+var auth = { apiKey: 'your api key' };
+var api = new createsend(auth);</code></pre>
+
+    <h2>Account</h2>
+
+    <p>
+        Campaign Monitor provides many account based operations. The sections list here
+        follow the same order as those listed on the Campaign Monitor API page.
+        For more details, check out
+        <a href="https://www.campaignmonitor.com/api/account/">
+            https://www.campaignmonitor.com/api/account/
+        </a>
+    </p>
+
+    <h3>Getting your clients</h3>
+
+    <p>
+        Using this wrapper to get the list of clients will actually wrap each client in
+        a <a href="#clients">Client</a> object. This allows you to not only pull the
+        <code class="language-javascript">clientId</code> and
+        <code class="language-javascript">name</code>, it also provides all the common
+        functions that may be performed on a client.
+    </p>
+
+    <pre><code class="language-javascript">api.account.getClients(function (err, clientList) {
+    console.log('You have ' + clientList.length + ' clients.');
+    for (var i = 0; i < clientList.length; i++) {
+        console.log('    ' + clientList[i].name);
+    }
+})</code></pre>
+</div>

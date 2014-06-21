@@ -7,8 +7,8 @@
     <link type="text/css" rel="Stylesheet" href="/css/prism.min.css" />
     <link type="text/css" rel="Stylesheet" href="/css/site.css" />
 </head>
-<body style="padding-top: 50px;">
-    <div class="navbar navbar-default navbar-fixed-top">
+<body>
+    <div class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -21,7 +21,6 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li @(model.activeTab == 'home' ? 'class="active"' : '')><a href="/">Home</a></li>
-                    <li @(model.activeTab == 'getting-started' ? 'class="active"' : '')><a href="/getting-started">Getting Started</a></li>
                     <li @(model.activeTab == 'about' ? 'class="active"' : '')><a href="/about">About</a></li>
                     <li><a href="https://github.com/nufyoot/createsend-node">Source</a></li>
                 </ul>
